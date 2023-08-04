@@ -21,6 +21,8 @@
 *.a
 *.la
 *.lo
+/lib/*
+/Scripts/*
 
 # Shared objects (inc. Windows DLLs)
 *.dll
@@ -53,6 +55,7 @@ dkms.conf
 
 # Python
 __pycache__/
+pyvenv.cfg
 
 # Raw data
 *.csv
