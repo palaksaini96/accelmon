@@ -18,7 +18,11 @@ if __name__ == "__main__":
             self.SAMPLEN = L
             self.DIV = D
 
-            T_sys = 1/48000000.
+            #T_sys = 1/48000000.
+
+            T_scale_factor = 1
+            T_sys = T_scale_factor/48000000.
+
             T_gclk = T_sys * self.DIV
             N_conv = 7 + 0.5*self.SAMPLEN
             self.T_conv = N_conv*T_gclk*4.0
